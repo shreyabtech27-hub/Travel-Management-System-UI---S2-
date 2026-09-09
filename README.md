@@ -44,6 +44,10 @@ the app in action.
 
 
 
+https://github.com/user-attachments/assets/1a4bacc8-0528-4369-a5c8-d983abb8bedf
+
+
+
 ## Notes
 
 - This was a learning exercise, not production software — passwords are stored in 
