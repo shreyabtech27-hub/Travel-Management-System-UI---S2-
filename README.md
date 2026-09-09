@@ -49,3 +49,15 @@ https://github.com/user-attachments/assets/1a4bacc8-0528-4369-a5c8-d983abb8bedf
 - This was a learning exercise, not production software — passwords are stored in 
   plaintext and there's no input validation beyond basic empty-field checks.
 - Built and tested on Windows (Win32/Win64) only.
+
+## Versions
+
+This repo has two folders reflecting how the project evolved:
+
+- **`v1/`** — the initial exploratory build. Basic Login/Registration/Home screens, 
+  mostly static UI with minimal working logic (a rough first pass at the forms).
+- **`v2/`** — the completed, working version. This is the one described above and 
+  shown in the demo — full Login → Menu → Cab/Hotel booking flow with file-based 
+  data storage.
+
+If you just want to see the finished project, go straight to **`v2/`**.
