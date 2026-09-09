@@ -42,7 +42,7 @@ the app in action.
 
 <img width="1366" height="721" alt="Screenshot 2024-05-13 220653" src="https://github.com/user-attachments/assets/7aa13280-17c9-4767-adcd-e5455b828c6e" />
 
-<src = "https://github.com/user-attachments/assets/1a4bacc8-0528-4369-a5c8-d983abb8bedf" /> 
+https://github.com/user-attachments/assets/1a4bacc8-0528-4369-a5c8-d983abb8bedf
 
 ## Notes
 
