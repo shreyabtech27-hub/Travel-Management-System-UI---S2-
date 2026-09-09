@@ -10,8 +10,6 @@ I gained at the time.
 
 ## What it does
 
-## What it does
-
 A 6-screen desktop app: Home → Login/Registration → Menu → Cab Booking / Hotel Booking.
 
 - **Registration & Login** — registration validates all 4 required fields before 
