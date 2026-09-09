@@ -10,12 +10,33 @@ I gained at the time.
 
 ## What it does
 
-- **Home screen** → choose to Login or Register
-- **Registration** → saves your name, phone, username, and password to a local text file
-- **Login** → checks your credentials against that file
-- **Menu** (after login) → choose to book a Cab or a Hotel room
-- **Cab Booking** → pick source, destination, car type, AC/Non-AC → generates a bill
-- **Hotel Booking** → pick city, hotel, room type, AC/Non-AC → generates a bill
+## What it does
+
+A 6-screen desktop app: Home → Login/Registration → Menu → Cab Booking / Hotel Booking.
+
+- **Registration & Login** — registration validates all 4 required fields before 
+  writing a record to a local file; login checks credentials against that file and 
+  gives distinct feedback for each outcome (invalid username / wrong password / success).
+  
+- **Cab Booking** — validates 5 required fields individually (each with its own 
+  error message), enforces a passenger-capacity rule for the EV option, and computes 
+  the fare with conditional surcharges (AC, EV, and Innova each apply a different 
+  markup) by looking up the base rate from a fares file.
+  
+- **Hotel Booking** — validates 4 required fields, then matches the selected 
+  city + hotel + room type + AC/Non-AC combination against a rates file to pull the 
+  exact price, and displays a GST-inclusive total.
+
+- **Payment** is simulated — clicking "Pay" confirms the booking with a success message, 
+  but no real payment gateway is integrated. Tax/surcharge calculations are illustrative 
+  (fixed percentages for demonstration) rather than based on actual tax rules.
+  
+- **Menu** — resets all fields on both booking forms every time they're reopened, 
+  so no stale data carries over from a previous booking.
+
+Data (user records and booking rates) is stored in local `.txt` files rather than a 
+real database. This project was about learning form design, multi-screen navigation, 
+input validation, and event-driven logic in C++Builder — not backend architecture.
 
 There's no real database — user records and bookings are stored in plain `.txt` files 
 in the app folder. This was purely about learning form design, navigation between 
@@ -46,8 +67,8 @@ https://github.com/user-attachments/assets/1a4bacc8-0528-4369-a5c8-d983abb8bedf
 
 ## Notes
 
-- This was a learning exercise, not production software — passwords are stored in 
-  plaintext and there's no input validation beyond basic empty-field checks.
+- Data is stored in local `.txt` files rather than a real database or hashed 
+  credentials — fine for a learning project, not meant for production use.
 - Built and tested on Windows (Win32/Win64) only.
 
 ## Versions
