@@ -1,0 +1,30 @@
+object MenuForm: TMenuForm
+  Left = 0
+  Top = 0
+  Caption = 'Menu'
+  ClientHeight = 350
+  ClientWidth = 432
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object HotelBookingButton: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Book a hotel'
+    OnClick = HotelBookingButtonClick
+  end
+  object CabBookingButton: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Book a cab'
+  end
+end

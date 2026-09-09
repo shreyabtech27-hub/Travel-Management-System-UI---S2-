@@ -1,0 +1,157 @@
+object HotelBookingform: THotelBookingform
+  Left = 0
+  Top = 0
+  Caption = 'Hotel Booking'
+  ClientHeight = 626
+  ClientWidth = 727
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object CityLabel: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Select a City '
+    TabOrder = 0
+    object CityPopupBox: TPopupBox
+      Items.Strings = (
+        'Kochi'
+        'Trivandrum'
+        'Kottayam')
+      Position.X = 144.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object HotelLabel: TLabel
+      Position.X = 344.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Select a Hotel'
+      TabOrder = 1
+      object HotelPopupBox: TPopupBox
+        Items.Strings = (
+          'Le Meridian'
+          'Brindavan Gardens')
+        Position.X = 128.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+  end
+  object RoomGroupBox: TGroupBox
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.X = 40.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Choose Room Type'
+    TextSettings.Font.Size = 16.000000000000000000
+    TabOrder = 1
+    object SingleRoomRadioButton: TRadioButton
+      Position.X = 24.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Single Room'
+    end
+    object DoubleRoomRadioButton: TRadioButton
+      Position.X = 176.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Double Room'
+    end
+    object ACnonACGroupBox: TGroupBox
+      StyledSettings = [Family, Style, FontColor, Other]
+      Position.Y = 144.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Room Specification'
+      TextSettings.Font.Size = 16.000000000000000000
+      TabOrder = 5
+      object NonACRadioButton: TRadioButton
+        Position.X = 24.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Non AC'
+      end
+      object ACRadioButton: TRadioButton
+        Position.X = 176.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'AC'
+      end
+    end
+  end
+  object SaveButton: TButton
+    Position.X = 432.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Save'
+    object ClearButton: TButton
+      Position.X = 144.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Reset'
+    end
+    object PayButton: TButton
+      Position.X = -96.000000000000000000
+      Position.Y = 208.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Pay'
+      Visible = False
+    end
+  end
+  object BillLabel: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object StatusLabel: TLabel
+    Position.X = 496.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object ErrorLabel: TLabel
+    Position.X = 481.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+end

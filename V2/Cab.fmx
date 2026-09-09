@@ -1,0 +1,170 @@
+object CabBookingForm: TCabBookingForm
+  Left = 0
+  Top = 0
+  Caption = 'Cab Booking'
+  ClientHeight = 606
+  ClientWidth = 705
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object DestinationLabel: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Select Starting point : '
+    TabOrder = 0
+    object DestinationPopupBox: TPopupBox
+      Items.Strings = (
+        'Kochi'
+        'Kottayam'
+        'Trivandrum')
+      Position.X = 144.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object PeopleLabel: TLabel
+      Position.X = 344.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Select No. of People :'
+      TabOrder = 2
+      object PeoplePopupBox: TPopupBox
+        Items.Strings = (
+          '1'
+          '2'
+          '3'
+          '4'
+          '5'
+          '6')
+        Position.X = 137.000000000000000000
+        Size.Width = 152.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object CarLabel: TLabel
+      Position.Y = 88.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Select Destination'
+      TabOrder = 0
+      object CarPopupBox: TPopupBox
+        Items.Strings = (
+          'Alappuzha'
+          'Kollam'
+          'Thrissur')
+        Position.X = 144.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object SourceLabel: TLabel
+        Position.Y = 72.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Select Car'
+        TabOrder = 1
+        object SourcePopupBox: TPopupBox
+          Items.Strings = (
+            'Toyota Innova'
+            'Tata Tiago EV')
+          Position.X = 145.000000000000000000
+          Size.Width = 152.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+      end
+    end
+  end
+  object SaveButton: TButton
+    Position.X = 416.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Save'
+    object ClearButton: TButton
+      Position.X = 144.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Reset'
+    end
+    object PayButton: TButton
+      Position.X = -72.000000000000000000
+      Position.Y = 288.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Pay'
+      Visible = False
+    end
+  end
+  object BillLabel: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 424.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object ErrorLabel: TLabel
+    Position.X = 467.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object StatusLabel: TLabel
+    Position.X = 482.000000000000000000
+    Position.Y = 544.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object ACnonACGroupBox: TGroupBox
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.X = 40.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Car Specification'
+    TextSettings.Font.Size = 16.000000000000000000
+    TabOrder = 5
+    object NonACRadioButton: TRadioButton
+      Position.X = 24.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Non AC'
+    end
+    object ACRadioButton: TRadioButton
+      Position.X = 176.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'AC'
+    end
+  end
+end

@@ -1,0 +1,29 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Home'
+  ClientHeight = 330
+  ClientWidth = 425
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LoginButton: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Login'
+  end
+  object RegistrationButton: TButton
+    Position.X = 264.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Register'
+  end
+end
